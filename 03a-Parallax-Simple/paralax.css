@@ -45,6 +45,7 @@ nav a:hover {
   background-color: #001;
 }
 
+/* Her sætter vi baggrundsbilleder og højde på de skiftende faste baggrundselementer */
 .bg1 {
   background-image: url("img/bg1.JPG");
   min-height: 70%;
@@ -65,6 +66,7 @@ nav a:hover {
   min-height: 100%;
 }
 
+/* Her er det CSS der giver parallax effekten ved at sætte background-attachment til fixed; */
 .bg1,
 .bg2,
 .bg3,
