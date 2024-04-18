@@ -70,24 +70,19 @@ nav a:hover {
 .bg3,
 .bg4 {
   position: relative;
+  display: flex;
+  align-items: center;
   background-attachment: fixed;
   background-size: cover;
 }
 
 .caption,
 .caption_last {
-  position: absolute;
   text-align: center;
-  left: 0;
-  top: 38%;
   width: 100%;
   font-size: 2em;
   letter-spacing: 0.5em;
   opacity: 0.8;
-}
-
-.caption_last {
-  top: 45%;
 }
 
 .text {
