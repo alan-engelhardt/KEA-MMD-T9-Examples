@@ -1,0 +1,32 @@
+---
+
+---
+
+<div class="scroll_container">
+  <div class="scroll_indicator"></div>
+</div>
+<style>
+  .scroll_container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 0.5rem;
+    background-color: lightgray;
+  }
+
+  .scroll_indicator {
+    width: 0%;
+    height: 100%;
+    background-color: darkgray;
+  }
+</style>
+<script>
+  window.addEventListener("scroll", onScroll);
+
+  function onScroll() {
+    var scrolled = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolledfactor = (scrolled / height) * 100;
+    document.querySelector(".scroll_indicator").style.width = `${scrolledfactor}%`;
+  }
+</script>

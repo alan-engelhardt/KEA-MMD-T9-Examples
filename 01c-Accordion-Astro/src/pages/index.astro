@@ -1,0 +1,38 @@
+---
+import "../styles/style.css";
+import "../components/Accordion.astro";
+import Accordion from "../components/Accordion.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Accordion Astro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Accordion in Astro</h1>
+      <p>Accordion example in Astro</p>
+      <p>Using <a href="https://www.w3schools.com/tags/tag_details.asp" targer="_blank">details</a> HTML tag in an <em>components</em></p>
+    </header>
+    <main>
+      <Accordion title="Here's an Accordion">
+        <h4>Here it is</h4>
+        <p>It's not quite like in HTML</p>
+        <p>But better</p>
+      </Accordion>
+      <Accordion title="Here's another Accordion">
+        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, rerum fuga consequuntur dicta quidem blanditiis minus corrupti fugiat vel, voluptatem optio ad iusto maiores autem et quis necessitatibus unde sequi?</article>
+      </Accordion>
+      <Accordion title="Here's yet another Accordion">
+        <article>Facilis, rerum fuga consequuntur dicta quidem blanditiis minu. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, rerum fuga consequuntur dicta quidem blanditiis minus corrupti fugiat vel, voluptatem optio ad iusto maiores autem et quis necessitatibus unde sequi?</article>
+      </Accordion>
+      <Accordion title="And another Accordion">
+        <article>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, rerum fuga consequuntur dicta quidem blanditiis minus corrupti fugiat vel, voluptatem optio ad iusto maiores autem et quis necessitatibus unde sequi?</article>
+      </Accordion>
+    </main>
+  </body>
+</html>

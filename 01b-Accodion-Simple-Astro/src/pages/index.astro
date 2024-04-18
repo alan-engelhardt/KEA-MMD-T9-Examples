@@ -1,0 +1,33 @@
+---
+import "../styles/style.css";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Accordion Simple Astro</title>
+  </head>
+  <body>
+    <header>
+      <h1>Simple Accordion in Astro</h1>
+      <p>Simple accordion example in Astro using <a href="https://www.w3schools.com/tags/tag_details.asp" targer="_blank">details</a> tag</p>
+      <p>Remember, you can still use HTML tags</p>
+    </header>
+    <main>
+      <details>
+        <summary>Here's an Accordion</summary>
+        <article>
+          <p>Just like in HTML</p>
+        </article>
+      </details>
+      <details class="styled_details">
+        <summary>Here's a Styled Accordion</summary>
+        <article>Again, pricisely the same</article>
+      </details>
+      <p>But it's <em>not</em> best pratice</p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 2rem;
+  font-family: sans-serif;
+}
+h1 {
+  margin-bottom: 1rem;
+}
+p {
+  margin-bottom: 0.5rem;
+}
+header {
+  margin-bottom: 2rem;
+}
+details,
+summary {
+  margin-bottom: 0.5rem;
+}
+
+.styled_details {
+  max-width: 300px;
+}
+.styled_details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  margin-bottom: 0rem;
+  padding: 0.5rem;
+  background-color: lightgray;
+}
+.styled_details article {
+  background-color: #eee;
+  padding: 0.5rem;
+}
+/* Arrow icon */
+.styled_details summary::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.5rem solid black;
+  border-inline: 0.4rem solid transparent;
+}
+details[open] > summary::after {
+  transform: rotate(-180deg);
+}
