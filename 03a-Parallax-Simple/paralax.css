@@ -13,6 +13,11 @@ body {
   background-size: cover;
 }
 
+main {
+  height: 100vh;
+  margin-top: 3.5rem;
+}
+
 a {
   color: #e5d3bc;
 }
