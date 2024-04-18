@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   color: #001;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -43,7 +44,6 @@ nav a {
   color: #001;
   text-decoration: none;
   background-color: #e5d3bc;
-  padding: 0.3em;
   margin: 0 0.5em;
 }
 
